@@ -14,11 +14,11 @@
  */
 
 /**
- * @fileoverview Sample program traverses the Managemt API hierarchy to
+ * @fileoverview Google Analytics Managemt API hierarchy to
  * retrieve the first profile id. This profile id is then used to query the
  * Core Reporting API to retrieve the top 25 organic
  * Note: auth_util.js is required for this to run.
- * @author api.nickm@gmail.com (Nick Mihailovski)
+ * @author suman007.pradhan@gmail.com (Suman Pradhan)
  */
 
 /**
@@ -171,8 +171,8 @@ function queryCoreReportingApi(profileId) {
  * @param {Object} response The reponse returned from the Core Reporting API.
  */
 function handleCoreReportingResults(response) {
-  if (!response.code) {
-	  	  console.log("Result By Keyword: "+JSON.stringify(response.result));
+  if (!response.code) { 
+      console.log("Result By Keyword: "+JSON.stringify(response.result));
 
     if (response.rows && response.rows.length) {
       var output = [];
